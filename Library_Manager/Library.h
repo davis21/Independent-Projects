@@ -42,8 +42,8 @@ public:
         }
     }
     // Get book from specific shelf
-    Book get_book(int x, int y)
-    {
+    //Book get_book(int x, int y)
+    //{
         // First find the book [going to use recursion to achieve this (not most efficient but good practice)]
-    }
+    //}
 };
