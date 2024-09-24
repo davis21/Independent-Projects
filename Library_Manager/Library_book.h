@@ -32,8 +32,8 @@ public:
         title = t;
         code = c;
         genre = g;
-        column = x;
-        row = y;
+        row = x;
+        column = y;
         page_count = p;
         f_or_nf = f;
         checked_out = o;

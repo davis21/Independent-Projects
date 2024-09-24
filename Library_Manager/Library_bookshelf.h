@@ -39,9 +39,10 @@ public:
     }
     
     // Function that adds a book to a spot in the bookshelf
-    void set_Book(int r, int c, Book b)
+    void set_Book(std::string t, std::string c, int g, int x, int y, int p, int f, int o)
     {
-        books[r][c] = b;
+        Book b(t, c, g, x, y, p, f, o);
+        books[x][y] = b;
     }
     // Function that returns the book at a user defined spot spot
     Book get_Book(int r, int c)
@@ -52,5 +53,14 @@ public:
     int get_code() const
     {
         return shelf_code;
+    }
+    // Getter for rows and columns
+    int get_row() const
+    {
+        return rows;
+    }
+    int get_col() const
+    {
+        return col;
     }
 };

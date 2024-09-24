@@ -41,9 +41,24 @@ public:
             std::cout << "Code for Shelf " << i + 1 << " is " << shelves[i].get_code() << std::endl;
         }
     }
+    // Add books to the shelf
+    void add_book(int s, std::string t, std::string c, int g, int x, int y, int p, int f, int o)
+    {
+        int temp = 0;
+
+        for (int i = 0; i < num_shelves; i++)
+        {
+            if (shelves[i].get_code() == s)
+            {
+                temp = i;
+            }
+        }
+
+        shelves[temp].set_Book(t, c, g, x, y, p, f, o);
+    }
     // Get book from specific shelf
-    //Book get_book(int x, int y)
-    //{
+    Book get_book(int x, int y)
+    {
         // First find the book [going to use recursion to achieve this (not most efficient but good practice)]
-    //}
+    }
 };
